@@ -1,0 +1,55 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body,
+html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+}
+
+.background-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.background-container img {
+  height: 100%;
+  width: 100%;
+}
+
+.logo-container {
+  background-color: darkgray;
+  background-size: contain;
+  align-self: flex-start;
+  top: 200px;
+  position: absolute;
+  height: 100px;
+  opacity: 0.5;
+}
+
+.logo-container img {
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
+}
+
+.form-container {
+  flex-grow: 1;
+}

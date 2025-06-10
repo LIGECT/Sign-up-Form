@@ -31,22 +31,51 @@
         <div class="main-block">
           <h3>Let's do this</h3>
           <div class="second-block">
-            <form action="">
+            <form action="https://httpbin.org/post" method="POST">
               <div>
-                <label for="">First name<input type="text" /> </label>
+                <label for="first-name"
+                  >First name
+                  <input type="text" name="name" id="first-name" required />
+                </label>
 
-                <label for="">Email <input type="email" /></label>
-
-                <label for="">Password <input type="password" /></label>
-              </div>
-              <div>
-                <label for=""
-                  >Last name <input type="text" name="" id=""
+                <label for="email"
+                  >Email <input type="email" name="email" id="email" required
                 /></label>
 
-                <label for="">Phone number <input type="number" /></label>
+                <label for="password"
+                  >Password
+                  <input
+                    type="password"
+                    name="password"
+                    id="password"
+                    required
+                    minlength="8"
+                    maxlength="12"
+                    pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{8,12}"
+                /></label>
+              </div>
+              <div>
+                <label for="last-name"
+                  >Last name
+                  <input type="text" name="last-name" id="last-name" required
+                /></label>
 
-                <label for="">Confirm password <input type="password" /></label>
+                <label for="number"
+                  >Phone number
+                  <input type="tel" name="number" id="number" required
+                /></label>
+
+                <label for="conf-password"
+                  >Confirm password
+                  <input
+                    type="password"
+                    name="conf-password"
+                    id="conf-password"
+                    required
+                    minlength="8"
+                    maxlength="12"
+                    pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{8,12}"
+                /></label>
               </div>
             </form>
           </div>

@@ -31,7 +31,11 @@
         <div class="main-block">
           <h3>Let's do this</h3>
           <div class="second-block">
-            <form action="https://httpbin.org/post" method="POST">
+            <form
+              id="mySuperForm"
+              action="https://httpbin.org/post"
+              method="POST"
+            >
               <div>
                 <label for="first-name"
                   >First name
@@ -82,7 +86,7 @@
         </div>
 
         <div class="third-block">
-          <button type="submit">Create Account</button>
+          <button type="submit" form="mySuperForm">Create Account</button>
           <p>Already have an account? <a href="#">Log in</a></p>
         </div>
       </div>

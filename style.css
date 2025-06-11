@@ -19,6 +19,7 @@ html {
   height: 100%;
   margin: 0;
   padding: 0;
+  background-color: #000000;
 }
 
 .main-container {
@@ -118,6 +119,7 @@ html {
 
 .second-block form {
   display: flex;
+  gap: 30px;
 }
 .second-block div {
   flex: 1;
@@ -130,12 +132,29 @@ html {
 }
 
 .second-block input {
-  width: 200px;
+  width: 215px;
   height: 30px;
   margin-bottom: 10px;
-  border: 1px inset rgb(233, 231, 231);
+  border: 1px inset #e9e7e7;
   border-radius: 5px;
   font-size: 16px;
+  box-shadow: none;
+  transform: translateY(0);
+}
+
+.second-block input:valid {
+  border: 2px solid rgb(104, 140, 94);
+}
+
+.second-block input:invalid {
+  border: 1px solid rgb(212, 4, 4);
+}
+
+.second-block input:focus {
+  border-color: rgb(104, 140, 94);
+  outline: none;
+  box-shadow: 0 0 10px rgba(104, 140, 94, 0.6);
+  transform: translateY(-1px);
 }
 
 .third-block {
@@ -146,13 +165,13 @@ html {
 .third-block button {
   border: none;
   padding: 10px 20px;
-  background-color: #688c5e;
+  background-color: rgb(104, 140, 94);
   color: white;
   border-radius: 5px;
   text-shadow: 0px 1px 0px #2f6627;
   font-size: 16px;
   cursor: pointer;
-  transition: background-color 0.3 ease;
+  box-shadow: 3px 3px 5px 0px rgba(104, 140, 94, 0.61);
 }
 
 .third-block button:hover {
